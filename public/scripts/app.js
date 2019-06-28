@@ -1,68 +1,31 @@
 'use strict';
 
-// JSX JavaScript XML
-var App = {
-    title: 'New App',
-    subtitle: 'This is a sub title. Not as important.',
-    options: ['Option One', 'Option Two']
-};
-
-var template = React.createElement(
-    'div',
-    null,
-    React.createElement(
-        'h1',
-        null,
-        App.title
-    ),
-    App.subtitle && React.createElement(
-        'p',
-        null,
-        App.subtitle
-    ),
-    App.options.length > 0 ? React.createElement(
-        'p',
-        null,
-        'Here are your options ',
-        App.options
-    ) : 'No Options'
-);
-
-var User = {
-    name: 'Vaughn Jon',
-    age: 17,
-    location: 'Texas'
-};
-
-var templateTwo = React.createElement(
-    'div',
-    null,
-    React.createElement(
-        'h1',
-        null,
-        'Name: ',
-        User.name ? User.name : 'Anon'
-    ),
-    User.age && User.age >= 18 && React.createElement(
-        'p',
-        null,
-        'Age: ',
-        User.age
-    ),
-    getLocation(User.location)
-);
-
-function getLocation(location) {
-    if (location) {
-        return React.createElement(
-            'p',
-            null,
-            'Location: ',
-            location
-        );
-    }
+function funcSquare() {
+    return x * x;
 }
 
-var appRoot = document.getElementById("app");
+var square = function square(x) {
+    return x * x;
+};
 
-ReactDOM.render(template, appRoot);
+// const squareArrow = (x) => {
+//     return x * x;
+// }
+
+var squareArrow = function squareArrow(x) {
+    return x * x;
+};
+
+console.log(squareArrow(4));
+
+// Test
+
+var getFirstName = function getFirstName(firstName) {
+    return firstName.split(' ')[0];
+};
+
+var getFirstName2 = function getFirstName2(firstName) {
+    return firstName.split(' ')[0];
+};
+
+console.log(getFirstName('Mike Smith'));
