@@ -1,0 +1,22 @@
+{
+  "name": "indecision-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "request-promise": "^4.2.4",
+    "yarn": "^1.17.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.5",
+    "babel-cli": "^6.26.0",
+    "babel-install": "2.1.0",
+    "babel-preset-react": "^6.24.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vaughn Alvarado",
+  "license": "ISC"
+}
