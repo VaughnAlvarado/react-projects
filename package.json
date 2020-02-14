@@ -6,7 +6,7 @@
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "request-promise": "^4.2.4",
-    "yarn": "^1.17.2"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.4.5",
